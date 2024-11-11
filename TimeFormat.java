@@ -22,6 +22,6 @@ public class TimeFormat {
 			amOrPm = "PM";
 		} 
 		
-		System.out.println(hours + ":" + String.format("%02d", minutes) + " " + amOrPm);
+		System.out.println(hours + ":" + (minutes < 10 ? "0" : "") + minutes + " " + amOrPm);
 	}
 }
